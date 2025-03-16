@@ -1,0 +1,86 @@
+/* Import Montserrat from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* General Body Styling */
+body {
+    font-family: Garamond, serif; /* Keep Garamond as default, override for h1 */
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background to match screenshot */
+    color: #FFFFFF; /* White text to match screenshot */
+}
+
+/* Heading 1 */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for h1 as requested */
+    font-size: 36pt;
+    text-align: center;
+    color: #FFFFFF; /* White text to match screenshot */
+    text-transform: uppercase; /* Optional: Match the uppercase style of the app */
+}
+
+/* Heading 2 (Second Page) */
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Consistent use of Montserrat */
+    font-size: 18pt;
+    color: #FFFFFF; /* Light gray for secondary headings */
+}
+
+/* Heading 3 (Contact, Levels) */
+h3 {
+    font-family: 'Montserrat', sans-serif; /* Consistent use of Montserrat */
+    font-size: 14pt;
+    color: #FFFFFF; /* Light gray for tertiary headings */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333333; /* Dark gray for navigation, matches header accent */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF; /* White links to match text */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #CCCCCC; /* Light gray on hover for subtle effect */
+}
+
+/* Section Styling */
+section {
+    margin: 20px;
+    padding: 15px;
+    color: #FFFFFF; /* Ensure section text is white */
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #CCCCCC; /* Add a 2px light gray outline */
+    border-radius: 5px; /* Optional: Slight rounding for aesthetics */
+}
+
+/* Footer (Contact) Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333333; /* Dark gray for footer, consistent with nav */
+}
+
+footer a {
+    color: #CCCCCC; /* Light gray links in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FFFFFF; /* White on hover for contrast */
+}

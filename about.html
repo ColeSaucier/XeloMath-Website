@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XeloMath - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About XeloMath</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>XeloMath Further</h1>
+
+        <!-- Levels List -->
+        <section class="levels">
+            <h2>Levels in XeloMath</h2>
+            <ul>
+                <li>Counting</li>
+                <li>Scattered Counting</li>
+                <li>Addition</li>
+                <li>Subtraction</li>
+                <li>Shape Pattern Predict</li>
+                <li>Great Or Less Than</li>
+                <li>Place Values</li>
+                <li>Clock</li>
+                <li>Visual Addition With Tens</li>
+                <li>Function Box Addition</li>
+                <li>Function Box Subtraction</li>
+                <li>Visual Multiplication</li>
+                <li>Visual Division</li>
+                <li>Textbook Addition</li>
+                <li>Textbook Subtraction</li>
+                <li>Long Multiplication (Elongated for Learning)</li>
+                <li>Fraction Shapes</li>
+                <li>Fraction and Scaling</li>
+                <li>Fraction and Scaling Hard</li>
+                <li>Long Division</li>
+            </ul>
+        </section>
+
+        <!-- Technical Info -->
+        <section class="technical">
+            <h2>Technical Information</h2>
+            <p>
+                XeloMath is built on Unity’s engine and Supabase cloud database. Each level is a unique scene and is loaded alongside an 
+                animation layer. The animation layer controls the loading and unloading of scenes through a gesture system: swipes up 
+                and down bring the user to different levels, swipes left reload the level, and a swipe right brings the user to a level 
+                select menu. There’s an animation that plays when no activity is measured, in case a user gets stuck—this shows navigation 
+                directions for swipes (and can be turned off). Users create an account on start with basic info and a username—no password 
+                required. This creates a user in the PostGRE database. Every time a user completes a level, their time is calculated, 
+                uploaded, and a “view” for the level’s leaderboard is maintained, sent down for the user’s leaderboard.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
