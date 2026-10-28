@@ -11,36 +11,55 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About XeloMath</a>
+        <a href="levels.html">Levels</a>
     </nav>
-
     <!-- Main Content -->
     <main>
-        <h1>XeloMath Further</h1>
+        <h1>About XeloMath</h1>
+        
+        <section class="overview">
+            <h2>Interactive Math, Measured by Improvement</h2>
+            <p>
+                XeloMath delivers a hands-off, gameplay-driven approach to math. Learners solve problems immediately, see their speed improve in real time, and climb leaderboards based on concrete metrics: percentage improvement, percentile ranking, and median speed. Class cohort leaderboards make progress visible and motivating for both home and classroom use.
+            </p>
+        </section>
 
         <!-- Levels List -->
         <section class="levels">
-            <h2>Levels in XeloMath</h2>
+            <h2>30 Levels of Progressive Learning</h2>
+            <p>Explore levels tailored to the curriculum from kindergarten to 7th grade (from simple counting to deriving line formulas). Each level is crafted to challenge young minds at a comfortable pace while ensuring a formative grasp of the math concepts. Topics include:</p>
             <ul>
                 <li>Counting</li>
-                <li>Scattered Counting</li>
-                <li>Addition</li>
-                <li>Subtraction</li>
-                <li>Shape Pattern Predict</li>
-                <li>Great Or Less Than</li>
+                <li>Basic Addition and Subtraction</li>
+                <li>Patterns</li>
+                <li>Greater than, Less than</li>
                 <li>Place Values</li>
-                <li>Clock</li>
-                <li>Visual Addition With Tens</li>
-                <li>Function Box Addition</li>
-                <li>Function Box Subtraction</li>
-                <li>Visual Multiplication</li>
-                <li>Visual Division</li>
-                <li>Textbook Addition</li>
-                <li>Textbook Subtraction</li>
-                <li>Long Multiplication (Elongated for Learning)</li>
-                <li>Fraction Shapes</li>
-                <li>Fraction and Scaling</li>
-                <li>Fraction and Scaling Hard</li>
-                <li>Long Division</li>
+                <li>Visual Addition and Subtraction</li>
+                <li>Organized Addition and Subtraction</li>
+                <li>Analogue Clock</li>
+                <li>Visual Multiplication and Division</li>
+                <li>Serialized Multiplication, Addition, and Subtraction</li>
+                <li>Long Multiplication and Division</li>
+                <li>Five Different Fraction Levels</li>
+                <li>PEMDAS</li>
+                <li>Exponents</li>
+                <li>Line Formulating</li>
+                <li>Factoring</li>
+                <li>A subset of Creative and Challenging Problems for High Achievers</li>
+            </ul>
+            <p>See the dedicated <a href="levels.html">Levels</a> page for screenshots and more detail on individual scenes.</p>
+        </section>
+
+        <!-- Key Features -->
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>On-Pace Bar:</strong> Race against yourself! The innovative Pace Bar lets learners compete against their personal best. They’ll know immediately when they have improved. We encourage young learners to push their fluency and master concepts with proof.</li>
+                <li><strong>Interactive Learning:</strong> The dynamic interface allows children to learn math intuitively. No boring explanations or instructional videos—learners immediately start solving problems and push beyond their grade level.</li>
+                <li><strong>Automatic Placement:</strong> Forget the hassle of manual level selection. Our Automatic Placement feature assesses grade and knowledge. Whether the young learner is in K or 7th grade, they’ll be placed among levels that suit them.</li>
+                <li><strong>Timed Leaderboards & Speed Metrics:</strong> Set the pace and see where learning stands among peers with real-time leaderboards. Challenge yourself by improving speed and accuracy. Learners are exposed to basic statistics including median speed, percentile among peers, and percentage improvement. Class cohort leaderboards support classroom competition. Feel confident when your kid is in the top 5% or better!</li>
+                <li><strong>Playlist Function:</strong> Shake things up with the Playlist, which enables a queue of levels for a varied challenge. Keep practice sessions exciting and focused.</li>
+                <li><strong>Flexibility:</strong> If a learner doesn’t enjoy the timed features, the leaderboard and best-time visualization can be disabled.</li>
             </ul>
         </section>
 
@@ -48,13 +67,7 @@
         <section class="technical">
             <h2>Technical Information</h2>
             <p>
-                XeloMath is built on Unity’s engine and Supabase cloud database. Each level is a unique scene and is loaded alongside an 
-                animation layer. The animation layer controls the loading and unloading of scenes through a gesture system: swipes up 
-                and down bring the user to different levels, swipes left reload the level, and a swipe right brings the user to a level 
-                select menu. There’s an animation that plays when no activity is measured, in case a user gets stuck—this shows navigation 
-                directions for swipes (and can be turned off). Users create an account on start with basic info and a username—no password 
-                required. This creates a user in the PostGRE database. Every time a user completes a level, their time is calculated, 
-                uploaded, and a “view” for the level’s leaderboard is maintained, sent down for the user’s leaderboard.
+                XeloMath is built on Unity’s engine and Supabase cloud database. Each level is a unique scene and is loaded alongside an animation layer. The animation layer controls the loading and unloading of scenes through a gesture system: swipes up and down bring the user to different levels, swipes left reload the level, and a swipe right brings the user to a level-select menu. An animation plays when no activity is measured (in case a user gets stuck); it shows navigation directions for swipes and can be turned off. Users create an account on start with basic info and a username—no password required. This creates a user in the PostgreSQL database. Every time a user completes a level, their time is calculated, uploaded, and a view for the level’s leaderboard is maintained and sent down for the user’s leaderboard.
             </p>
         </section>
     </main>
